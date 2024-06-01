@@ -1,0 +1,11 @@
+.vscode
+node_modules
+.next
+*.DS_Store
+.env
+.env.local
+.env.example
+.vercel
+yarn-error.log
+.idea
+package-lock.json

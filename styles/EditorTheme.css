@@ -1,0 +1,325 @@
+/* editor styles  */
+.editor-shell {
+  margin: 0px auto;
+  max-width: 1200px;
+  color: #000;
+  position: relative;
+}
+
+.editor-shell .editor-container {
+  background: transparent;
+  position: relative;
+  cursor: text;
+  display: block;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contenteditable {
+  min-height: 40px;
+  /* max-height: 300px; */
+  cursor: text;
+  font-size: 15px;
+  display: block;
+  position: relative;
+  tab-size: 1;
+  outline: 0;
+  padding: 10px;
+  overflow: auto;
+  resize: vertical;
+}
+.contenteditable::-webkit-scrollbar {
+  display: none;
+}
+.contenteditable.resize-none {
+  resize: none !important;
+  padding: 0px;
+}
+
+.editor__paceholder {
+  font-size: 15px;
+  color: #999;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  user-select: none;
+  white-space: nowrap;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.toolbar {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.toolbar .divider {
+  width: 1px;
+  background-color: #eee;
+  margin: 0 4px;
+}
+
+/* elements style */
+
+.EditorTheme__ltr {
+  text-align: left;
+}
+.EditorTheme__rtl {
+  text-align: right;
+}
+
+.EditorTheme__paragraph {
+  margin: 0;
+  margin-bottom: 8px;
+  position: relative;
+}
+.EditorTheme__paragraph:last-child {
+  margin-bottom: 0;
+}
+.EditorTheme__h1 {
+  display: block;
+  font-size: 2em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.EditorTheme__h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.EditorTheme__h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.EditorTheme__textBold {
+  font-weight: bold;
+}
+.EditorTheme__textItalic {
+  font-style: italic;
+}
+.EditorTheme__textUnderline {
+  text-decoration: underline;
+}
+.EditorTheme__textStrikethrough {
+  text-decoration: line-through;
+}
+.EditorTheme__textUnderlineStrikethrough {
+  text-decoration: underline line-through;
+}
+.EditorTheme__textSubscript {
+  font-size: 0.8em;
+  vertical-align: sub !important;
+}
+.EditorTheme__textSuperscript {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+.EditorTheme__textCode {
+  background-color: rgb(240, 242, 245);
+  padding: 1px 0.25rem;
+  font-family: Menlo, Consolas, Monaco, monospace;
+  font-size: 94%;
+}
+
+/*Code editor */
+
+.EditorTheme__code {
+  background-color: rgb(240, 242, 245);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  display: block;
+  padding: 8px 8px 8px 52px;
+  line-height: 1.53;
+  font-size: 13px;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  tab-size: 2;
+  /* white-space: pre; */
+  overflow-x: auto;
+  position: relative;
+}
+
+/* list */
+
+.EditorTheme__ol1 {
+  list-style: decimal;
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+.EditorTheme__ol2 {
+  padding: 0;
+  margin: 0;
+  list-style-type: upper-alpha;
+  list-style-position: inside;
+}
+.EditorTheme__ol3 {
+  padding: 0;
+  margin: 0;
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+}
+.EditorTheme__ol4 {
+  padding: 0;
+  margin: 0;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+.EditorTheme__ol5 {
+  padding: 0;
+  margin: 0;
+  list-style-type: lower-roman;
+  list-style-position: inside;
+}
+.EditorTheme__ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.EditorTheme__listItem {
+  display: list-item;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.EditorTheme__nestedListItem {
+  list-style-type: none;
+}
+.EditorTheme__nestedListItem:before,
+.EditorTheme__nestedListItem:after {
+  display: none;
+}
+
+/* Image Node */
+
+.ImageNode__contentEditable {
+  min-height: 20px;
+  border: 0px;
+  resize: none;
+  cursor: text;
+  caret-color: rgb(5, 5, 5);
+  display: block;
+  position: relative;
+  tab-size: 1;
+  outline: 0px;
+  padding: 10px;
+  user-select: text;
+  font-size: 12px;
+  width: calc(100% - 20px);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.ImageNode__placeholder {
+  font-size: 12px;
+  color: #888;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 10px;
+  left: 10px;
+  user-select: none;
+  white-space: nowrap;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.image-control-wrapper--resizing {
+  touch-action: none;
+}
+
+.editor-shell span.editor-image {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  user-select: none;
+}
+
+.editor-shell .editor-image img {
+  max-width: 100%;
+  display: block;
+}
+
+.editor-shell .editor-image img.focused {
+  outline: 2px solid rgb(60, 132, 244);
+  user-select: none;
+}
+
+.editor-shell .editor-image .image-resizer {
+  display: block;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  background-color: rgb(60, 132, 244);
+  border: 1px solid #fff;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-n {
+  top: -6px;
+  left: 48%;
+  cursor: n-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-ne {
+  top: -6px;
+  right: -6px;
+  cursor: ne-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-e {
+  bottom: 48%;
+  right: -6px;
+  cursor: e-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-se {
+  bottom: -2px;
+  right: -6px;
+  cursor: nwse-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-s {
+  bottom: -2px;
+  left: 48%;
+  cursor: s-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-sw {
+  bottom: -2px;
+  left: -6px;
+  cursor: sw-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-w {
+  bottom: 48%;
+  left: -6px;
+  cursor: w-resize;
+}
+
+.editor-shell .editor-image .image-resizer.image-resizer-nw {
+  top: -6px;
+  left: -6px;
+  cursor: nw-resize;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
